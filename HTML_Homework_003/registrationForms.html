@@ -1,0 +1,101 @@
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="bg" /> 
+		<style>
+		table{border-collapse: collapse;}
+		.descRow {position:relative; width: 200px; border: solid 1px; text-align: center; font-weight: bold; }
+		.submit {position:relative; width: 440px; border: solid 1px; text-align: center; font-weight: bold; background-color: skyblue}
+		.input {position:relative; width:240px; border:solid 1px;}
+		textarea {width: 220px}
+		input.state{ width: 20%;}
+		input.city{ width: 60%;}
+		input.zip{ width: 25%;}
+		input.cCode{width: 20%;}
+		input.aCode{width: 20%;}
+		input.number{width: 45%;}
+		</style>
+	</head>
+	<body>
+		<form action="/" method="get">
+			<table>
+				<tr>
+					<td class="descRow">Last Name</td>
+					<td class="input"><input type="text" name="lName" /></td>
+				</tr>
+				<tr>
+					<td class="descRow">First Name</td>
+					<td class="input"><input type="text" name="fName" /></td>
+				</tr>
+				<tr>
+					<td class="descRow">Address</td>
+					<td class="input"><textarea rows="4" name="address"></textarea></td>
+				</tr>
+				<tr>
+					<td class="descRow">City</td>
+					<td class="input"><input type="text" name="cityName" class="city" /> State <input type="text" name="cityCodre" class="state"/></td>
+				</tr>
+				<tr>
+					<td class="descRow">Zip/Postal Code</td>
+					<td class="input"><input type="text" name="zipCode" class="zip" /></td>
+				</tr>
+				<tr>
+					<td class="descRow">Country</td>
+					<td class="input">
+						<select>
+  							<option value="volvo">Bulgaria</option>
+							<option value="saab">Romania</option>
+							<option value="mercedes">Greece</option>
+  							<option value="audi">Turkey</option>
+  							<option value="audi">Turkey</option>
+  	  						<option value="audi">Austria</option>
+  							<option value="audi">Serbia</option>
+  							<option value="audi">Italy</option>
+  							<option value="audi">Spain</option>			
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="descRow">Phone (country code, <br>area code, number)</td>
+					<td class="input">(+<input type="text" name="countryCode" class="cCode"/>) <input type="text" name="areaCode" class="aCode"/> <input type="text" name="number" class="number"/></td>
+				</tr>
+				<tr>
+					<td class="descRow">E-mail</td>
+					<td class="input"><input type="text" name="email" size="28"/></td>
+				</tr>
+				<tr>
+					<td class="descRow">Birth date</td>
+					<td class="input"><textarea rows="1" name="birthDate">дд.мм.гггг</textarea></td>
+				</tr>
+				<tr>
+					<td class="descRow">Gender</td>
+					<td class="input">
+						<select>
+  							<option value="volvo">Male</option>
+							<option value="saab">Female</option>
+							<option value="mercedes">Undefined</option>	
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="descRow">Starting date</td>
+					<td class="input">
+						<input type="radio" name="gender" value="spring"/>Spring 2016
+						<input type="radio" name="gender" value="summer"/>Summer 2016
+					</td>
+				</tr>
+				<tr>
+					<td class="descRow">Comments / Questions</td>
+					<td class="input"><textarea rows="6" name="comments"></textarea></td>
+				</tr>
+				<tr>
+					<td class="submit" colspan=2>
+						<input type="button" value="Submit"/>&nbsp;&nbsp;&nbsp;
+						<input type="button" value="Clean this form"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

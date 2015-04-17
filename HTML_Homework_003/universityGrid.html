@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>Problem 002 - University Grid</title>
+		<style>
+			table{border-collapse: collapse; counter-reset:section; background-color: #DDFFDD}
+			.count:before{counter-increment:section;content:counter(section);}
+			.count-page:before{counter-increment:section;content:counter(section);}
+			.desc-top {position:relative; width: 300px; border: solid 1px; text-align: center; font-weight: bold; }
+			.desc-bot {position:relative;  border: solid 1px; text-align: center; font-weight: bold; }		
+			.order {position: relative; width: 40px; border: solid 1px; text-align: center; font-weight: bold;}
+			.pager {text-align: left ; background-color: #ffffCC; font-style: italic;}
+			td {padding:5px;}
+		</style>
+	</head>
+	<body>
+		<h1>Problem 002 - University Grid</h1>
+		<br>
+		<table>
+			<tr>
+				<td class="order" rowspan="2">Order</td>
+				<td class="desc-top" colspan="3">Personal info</td>
+				<td class="desc-top" colspan="5">University marks</td>
+			</tr>
+			<tr>
+				<td class="desc-bot" rows="1" >First name</td>
+				<td class="desc-bot" >Last name</td>
+				<td class="desc-bot" >Facility number</td>
+
+				<td class="desc-bot">English</td>
+				<td class="desc-bot">Math</td>
+				<td class="desc-bot">Biology</td>
+				<td class="desc-bot">Chemistry</td>
+				<td class="desc-bot">Total</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Branimira</td>
+				<td class="desc-bot" >Ivanova</td>
+				<td class="desc-bot" >1425789</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">4</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Tristan</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >245789654</td>
+				<td class="desc-bot">6</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">6</td>
+				<td class="desc-bot">5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Pesho</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">2</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">3.5</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Vania</td>
+				<td class="desc-bot" >Ivanova</td>
+				<td class="desc-bot" >80261548</td>
+				<td class="desc-bot">6</td>
+				<td class="desc-bot">6</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">5.25</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Ivan</td>
+				<td class="desc-bot" >Ivanov</td>
+				<td class="desc-bot" >785452225</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">5</td>
+				<td class="desc-bot">4.25</td>
+			</tr>
+			<tr>
+				<td class="desc-bot count" ></td>
+				<td class="desc-bot" >Maria</td>
+				<td class="desc-bot" >Ivanova</td>
+				<td class="desc-bot" >475275548</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">3</td>
+				<td class="desc-bot">4</td>
+				<td class="desc-bot">6</td>
+				<td class="desc-bot">4.5</td>
+			</tr>						
+			<tr>
+				<td class="desc-bot pager" colspan="9">
+					<input type="button" value="Previous" onclick="location.href='universityGrid.html'"/>
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>					
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>
+					<a href="universityGrid.html" class="count-page"></a>
+					<input type="button" value="Next" onclick="location.href='universityGrid.html'"/>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
