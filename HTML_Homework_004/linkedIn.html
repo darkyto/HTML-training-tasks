@@ -1,0 +1,104 @@
+<html>
+<head>
+	<style>
+	body {font-family: Verdana , "Times New Roman";}
+	ul.navi {padding-top: 10px; margin: 5px; }
+	li {padding-left: 3px; padding-top: 8px}
+	fieldset.login {width: 250px; position: absolute; top: 10px; left:230px;}
+	button.signin {width: 170px; background-color: #cccccc ; font-weight: bold;}
+	.header {width: 80%; background: rgb(59,103,158); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,103,158,1)), color-stop(50%,rgba(43,136,217,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	}
+	.join {width: 600px; font-weight: bold;}
+	.joinin {text-align: center; width: 560px; background-color: #f7d710; height: 34px;}
+	.search {width: 600px;}
+	.article {width: 80%;}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="navi">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">What's LinkedIn</a></li>
+			<li><a href="#">Join today!</a></li>
+			<li><a href="#">Forgoten password</a></li>
+			<li><a href="#">F.A.Q.</a></li>
+		</ul>
+		<form>
+			<fieldset class="login">
+				<legend> Log in </legend><br/>
+				username: <input type="text" name="usernam" placeholder="Enter username" autofocus="autofocus" required="required"/>
+				password: <input type="password" name="password" placeholder="Enter password" required="required"/>
+				<button type="submit" name="login" class="signin" >sign in</button>
+			</fieldset>
+		</form>
+	</nav>
+
+	<header>
+		<h1 class="header">LinkenIn</h1> 
+	</header>
+
+	<section>
+		<div>
+			<article class="article">
+				<header>
+					<h2>Over 175 milllion proffesionals are use LinkenIN to share ideas, information and opportunities</h2>
+				</header>
+				<section >
+					Lorem ipsum dolor sit amet, consectetur adipiscing <b>elit</b>. Mauris urna orci, euismod vitae sollicitudin et, varius et velit. Cras et tellus erat. Vestibulum auctor varius purus faucibus posuere. Maecenas et libero et orci bibendum eleifend sit amet ut purus. Sed at lorem in metus tempus pretium. Praesent cursus rhoncus nulla. Nulla condimentum lacus et ligula consectetur eu tristique sem scelerisque. Duis id velit enim, sed sodales nulla. Donec leo erat, posuere vel scelerisque in, rutrum ac magna. <i>Donec</i> <em>	elementum nunc molestie nulla semper</em> vitae placerat turpis bibendum. Phasellus egestas lobortis dictum.
+					<ul>
+						<li>Stay informed about contacts and industry</li>
+						<li>Find users and knowage to achive your golas</li>
+						<li>Control your profesional identity online</li>
+					</ul>
+				</section>
+			</article>
+		</div>
+	</section>
+
+	<section>
+		<div>
+			<header>
+				<h2>Get Started - its Free!</h2>
+			</header>
+			<section>
+				<form>
+					<fieldset class="join">
+						<legend> Sign in </legend><br/>
+						First Name: <input type="text" name="firstname" size="20" placeholder="Enter First Name"/>
+						Last Name: <input type="text" name="lastname" size="20" placeholder="Enter Last Name"/><br/>
+						E-mail address: <input type="text" name="email" size="55" placeholder="Enter your e-mail"/><br/>
+						Enter Password: <input type="text" name="password" size="54" placeholder="Choose pasword"/><br/>
+						<button type="button" name="signIn" class="joinin" >Join now!</button>
+					</fieldset>
+				</form>
+			</section>
+		</div>
+	</section>
+	<p>
+		<section>
+			<div>
+				<header>
+					<h3>Search user by name:</h3>
+				</header>
+				<section>
+					<form>
+						<fieldset class="search">
+							<legend> Sign in </legend><br/>
+							First Name: <input type="text" name="firstname" size="20" placeholder="Enter First Name"><br/>
+							Last Name: <input type="text" name="lastname" size="20" placeholder="Enter Last Name"><br/>
+							<button type="button" name="signIn"  >GO!</button>
+						</fieldset>
+					</form>
+				</section>
+			</div>
+		</section>
+	</p>
+</body>
+</html>
